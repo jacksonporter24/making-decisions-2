@@ -113,7 +113,6 @@ if (myFavoriteNumbers.length < 7) {
   console.log("There are not enough elements in this array.")
 } else if  (myFavoriteNumbers.length > 7) {
   someNum = myFavoriteNumbers[6]
-  console.log(myFavoriteNumbers)
 }
 
 ////////// PROBLEM 8 //////////
@@ -170,8 +169,14 @@ If F: "The student is failing."
 If the letter grade is not one of the above letters, console.log 'Not an eligible grade.'
 */
 
-
-
+switch (letterGrade) {
+  case A: console.log("The student is doing excellently.")
+  case B: console.log("The student is doing well.")
+  case C: console.log("The student is doing alright.")
+  case D: console.log("The student is not doing very well.")
+  case F: console.log("The student is failing.")
+  default: console.group("Not an eligible grade.")
+}
 
 
 ////////// PROBLEM 11 //////////
